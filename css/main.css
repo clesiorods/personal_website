@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: rgb(0, 0, 15);
+}
+
+
+div#gradient {
+    position: fixed;
+    height: 75vh;
+    width: 100vw;
+    background-image: linear-gradient(rgb(35, 0, 90), rgb(38, 0, 98), rgb(0, 0, 15));
+}
+
+
+main {
+    position: absolute;
+    width: 75vw;
+    background-color: rgba(255, 255, 255, 0.089);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto
+}
+
+section#side_section {
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+img#profile_photo {
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
