@@ -1,41 +1,97 @@
-* {
+
+html, body {
+    color: white;
+    background: rgb(0, 0, 15);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
-    background: rgb(0, 0, 15);
+    font-family: Roboto;
 }
 
 
 div#gradient {
-    position: fixed;
-    height: 75vh;
+    height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgb(35, 0, 90), rgb(38, 0, 98), rgb(0, 0, 15));
+    background-image: linear-gradient(rgb(45, 0, 85), rgb(32, 0, 63), rgb(0, 0, 15));
 }
 
+nav {
+    display: flex;
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    top: 0;
+    background-color: rgb(45, 0, 85);
+}
+
+nav h1 {
+    font: 800 30px Arial;
+}
+
+nav button {
+    width: 100px;
+    border-radius: 3px;
+    border: none;
+
+    color: white;
+    background: linear-gradient(90deg, rgba(0,182,0,1) 0%, rgb(49, 245, 0) 100%);}
 
 main {
+    padding-top: 50vh;
     position: absolute;
-    width: 75vw;
-    background-color: rgba(255, 255, 255, 0.089);
-    left: 0;
-    right: 0;
     top: 0;
+    right: 0;
     bottom: 0;
-    margin: auto
+    left: 0;
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-gap: 13px;
+    grid-template-columns:1fr 3.5fr;
+}
+
+article.container {
+    background-color: rgb(50, 50, 50);
+    border-radius: 3px;
+    /* box-shadow: 1px 0px 35px rgba(27, 24, 37, 0.562); */
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#ex1, #ex2, #ex3 {
+    height: 300px;
+    box-shadow: none;
 }
 
 section#side_section {
-    width: 20vw;
-    background-color: rgba(255, 255, 255, 0.356);
+}
+
+article#profile {
+    text-align: center;
+    align-items: center;
 }
 
 img#profile_photo {
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 18vh;
+    border-radius: 50%;
+}
+
+article#git_hub {
+    text-align: center;
+}
+
+article#git_hub img {
+    height: 10vh;
+}
+
+article#description {
+}
+
+footer {
+    margin-top: 150vh;
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(28, 0, 68);
 }
