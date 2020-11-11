@@ -10,34 +10,58 @@ html, body {
 
 
 div#gradient {
+    text-align: center;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgb(45, 0, 85), rgb(32, 0, 63), rgb(0, 0, 15));
+    background-image: linear-gradient(rgb(45, 0, 85), rgb(20, 0, 41), rgb(0, 0, 15));
+    padding-top: 13vh;
 }
 
-nav {
-    display: flex;
+div div#animado {
+    font: 800 5vh Arial;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div div#animado p {
+    text-align: left;
+}
+
+div#top_bar {
     position: fixed;
     height: 60px;
     width: 100vw;
     top: 0;
+    padding: 5px 0;
     background-color: rgb(45, 0, 85);
     text-align: center;
     display: flex;
 }
 
+nav {
+    text-align: justify;
+    display: flex;
+    width: 78vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
 nav h1 {
-    font: 800 30px Arial;
+    margin-top: 0px;
+    font: 800 50px Arial;
 }
 
 nav button {
-    width: 100px;
+    right: 0;
+    width: 125px;
     border-radius: 3px;
     border: none;
-    right: 0;
 
     color: white;
     background: linear-gradient(90deg, rgba(0,182,0,1) 0%, rgb(49, 245, 0) 100%);
+    margin: 10px 0 10px auto;
 }
 
 main {
