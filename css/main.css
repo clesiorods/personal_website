@@ -10,7 +10,11 @@ html, body {
 
 ul {
     list-style: none;
-    margin-left: -25px;
+    margin-left: -30px;
+}
+
+li {
+    margin-top: -10px;
 }
 
 div#gradient {

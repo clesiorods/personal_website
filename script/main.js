@@ -2,7 +2,7 @@
 const listarRepos = function(repos) {
     let ul = document.querySelector('ul#repos');
 
-    for(i=0; i<5; i++) {
+    for(i=0; i<6; i++) {
         let li_item = document.createElement('li');
         let p_item = document.createElement('p');
 
