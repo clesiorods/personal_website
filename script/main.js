@@ -20,3 +20,19 @@ axios.get('https://api.github.com/users/clesiorods/repos')
     .catch((erro) => {
         console.warn(erro);
     });
+
+
+
+
+
+
+    // ANIMAÇÃO DO TEXTO DE ENTRADA
+
+    function animadorTexto(element) {
+        const textArray = element.innerHTML.split('');
+        element.innerHTML = '';
+        textArray.forEach((letra, i) => {
+            setTimeout(() => {element.innerHTML += letra}, 80*i); 
+        });
+    }
+    animadorTexto(document.querySelector('p#animado'));
