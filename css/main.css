@@ -8,6 +8,10 @@ html, body {
     font-family: Roboto;
 }
 
+ul {
+    list-style: none;
+    margin-left: -25px;
+}
 
 div#gradient {
     text-align: center;
@@ -62,6 +66,7 @@ nav button {
     color: white;
     background: linear-gradient(90deg, rgba(0,182,0,1) 0%, rgb(49, 245, 0) 100%);
     margin: 10px 0 10px auto;
+    font: 600 20px Arial;
 }
 
 main {
@@ -93,6 +98,7 @@ article.container {
 }
 
 section#side_section {
+    display: unset;
 }
 
 article#profile {
@@ -112,6 +118,16 @@ article#git_hub {
 article#git_hub img {
     height: 10vh;
 }
+
+article#git_hub a {
+    color: rgb(49, 245, 0);
+    font-weight: 800;
+}
+
+article#git_hub p {
+    text-align: left;
+}
+
 
 article#description {
 }
