@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: normal 22px Roboto;
+    font: normal 25px Arial;
 }
 
 ul {
@@ -29,7 +29,7 @@ div#animado {
     margin-top: 60px;
     padding: 30px 100px 13px 110px;
 
-    font: 800 5.5vh Arial;
+    font: 800 45px Arial;
 }
 
 
@@ -97,6 +97,7 @@ main {
     grid-template-rows: auto auto;
     width: 78vw;
     max-width: 1500px;
+    min-width: 600px;
 }
 
 article.container {
@@ -148,7 +149,7 @@ article#description {
 }
 
 footer {
-    margin-top: 100%;
+    margin-top: 10vh;
     bottom: 0;
     left: 0;
     height: 400px;

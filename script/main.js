@@ -35,4 +35,5 @@ function animadorTexto(element) {
         setTimeout(() => {element.innerHTML += letra}, 80*i); 
     });
 }
+
 animadorTexto(document.querySelector('p#animado'));
