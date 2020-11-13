@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: normal 20px Roboto;
+    font: normal 22px Roboto;
 }
 
 ul {
@@ -18,28 +18,25 @@ li {
 }
 
 div#gradient {
-    text-align: center;
     height: 100vh;
     width: 100vw;
     background-image: linear-gradient(rgb(45, 0, 85), rgb(20, 0, 41), rgb(0, 0, 15));
-    padding-top: 13vh;
 }
 
-div div#animado {
-    font: 800 5vh Arial;
-    width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 800;
+div#animado {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 60px;
+    padding: 30px 100px 13px 110px;
+
+    font: 800 5.5vh Arial;
 }
 
 
 
 div#animado p::after {
     content: '_';
-    margin-left: -20px;
+    margin-left: -10px;
     opacity: 1;
     animation: piscar .65s infinite;
 }
@@ -80,29 +77,26 @@ nav h1 {
 
 nav button {
     right: 0;
-    width: 125px;
+    width: 150px;
     border-radius: 3px;
     border: none;
 
     color: white;
     background: linear-gradient(90deg, rgba(0,182,0,1) 0%, rgb(49, 245, 0) 100%);
-    margin: 10px 0 10px auto;
-    font: 600 20px Arial;
+    margin: 6px 0 6px auto;
+    font: 600 25px Arial;
 }
 
 main {
-    padding-top: 50vh;
-    max-width: 1500px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 78vw;
-    margin: auto;
+
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-gap: 13px;
     grid-template-columns:1fr 3.5fr;
+    grid-template-rows: auto auto;
+    width: 78vw;
+    max-width: 1500px;
 }
 
 article.container {
@@ -168,25 +162,10 @@ footer {
 
 
 
-@media(max-width: 1100px) {
+@media(max-width: 900px) {
     div div#animado {
         width: 60vw;
-        margin-top: -5vh;
-    }
-}
-
-@media(max-width: 889px) {
-    main {
-        padding-top: 60vh;
-    }
-}
-
-@media(max-width: 650px) {
-    div div#animado {
-        padding-top: -5vh;
-        font-size: 4vh;
-    }
-    main {
-        padding-top: 53vh;
+        font-size: 5vh;
+        padding-left: 100px;
     }
 }
