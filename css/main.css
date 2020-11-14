@@ -5,7 +5,8 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: normal 25px Arial;
+    font: 400 18px 'Roboto', sans-serif;
+    
 }
 
 ul {
@@ -64,12 +65,15 @@ div#animado {
     grid-column-start: 1;
     grid-column-end: 3;
     margin-top: 60px;
-    padding: 30px 100px 13px 100px;
+    padding: 30px 12vw 13px 12vw;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 
-    font: 800 45px Arial;
+    font-size: 60px;
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'Chakra Petch', sans-serif;
+    line-height: 1.2;
 }
 
 
@@ -105,9 +109,11 @@ main {
 article.container {
     background-color: rgb(50, 50, 50);
     border-radius: 3px;
-    /* box-shadow: 1px 0px 35px rgba(27, 24, 37, 0.562); */
     padding: 22px;
     margin-bottom: 15px;
+}
+article.container p {
+    padding-top: 25px;
 }
 
 #ex1, #ex2, #ex3 {
@@ -129,6 +135,18 @@ img#profile_photo {
     border-radius: 50%;
 }
 
+div#icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    width: 148px;
+    margin: 10px auto 10px auto;
+}
+div#icons img {
+    height: 28px;
+}
+
+
 article#git_hub {
     text-align: center;
 }
@@ -139,10 +157,11 @@ article#git_hub img {
 
 article#git_hub a {
     color: rgb(49, 245, 0);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 article#git_hub p {
+    padding-top: 0;
     text-align: left;
 }
 
@@ -169,5 +188,7 @@ footer {
     div div#animado {
         width: 60vw;
         font-size: 5vh;
+        padding: 30px 9vw 13px 9vw;
+        line-height: 1;
     }
 }
